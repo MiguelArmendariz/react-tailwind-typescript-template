@@ -33,12 +33,18 @@ module.exports = env => {
       },
       module: {
         rules: [
+          // -- Typescript
+          {
+            test: /(\.ts|\.tsx|\.jsx)$/,
+            use: 'awesome-typescript-loader',
+          },
           // -- Javascript
           {
+            enforce: 'pre',
             test: /\.js$/,
             exclude: /node_modules/,
             use: {
-              loader: 'babel-loader',
+              loader: 'source-map-loader',
             },
           },
           // -- Styles

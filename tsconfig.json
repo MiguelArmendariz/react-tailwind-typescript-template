@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["./*"],
+      "@assets/*": ["./Static/Assets"],
+    },
+    "types":[
+      "react"
+    ],
+    "module": "es2017",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "strict": true,
+    "strictNullChecks": true,
+    "allowJs": true,
+    "removeComments": true,
+    "jsx": "react",
+    
+  }
+}
