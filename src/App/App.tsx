@@ -1,7 +1,7 @@
-import React from 'react';
+import * as React from 'react';
 import 'tailwindcss/tailwind.css';
 
-const App = () => (
+const App: React.FunctionComponent = () => (
   <>
     <h1>H1 header</h1>
     <h2>H2 header</h2>

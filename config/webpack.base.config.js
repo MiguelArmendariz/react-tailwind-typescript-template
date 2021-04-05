@@ -17,11 +17,11 @@ const APP_DIR = path.resolve(__dirname, '../src');
 const PREFERED_PORT = 3000;
 const PORT = portFinderSync.getPort(PREFERED_PORT);
 
-module.exports = env => {
+module.exports = (env) => {
   const { PLATFORM } = env;
   return merge([
     {
-      entry: ['@babel/polyfill', APP_DIR],
+      entry: `${APP_DIR}/index.tsx`,
       output: {
         publicPath: '/',
       },
@@ -105,6 +105,7 @@ module.exports = env => {
         ],
       },
       resolve: {
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
         alias: {
           '@': path.resolve(__dirname, '../src'),
           '@assets': path.resolve(__dirname, '../src/Static/Assets'),
