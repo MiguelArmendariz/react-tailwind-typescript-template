@@ -1,4 +1,4 @@
-# react-tailwind-app-template
+# react-tailwind-typescript-template
 This project is a basic template for a react application using webpack, and
 YARN as package manager.
 
@@ -6,8 +6,8 @@ YARN as package manager.
 * Webpack configuration for local and prebuild.
 * Public folder like create-react-app.
 * Src folder without file structuring.
-* Babel configuration to work with react.
-* Eslint with basic configuration **using Wesbos**
+* Typescript support.
+* Eslint with basic configuration **using Wesbos** for typescript. **Read important Notes**
 * The template works with both css and scss, but is highly recommended to use tailwind.
 * MIT license.
 
@@ -15,6 +15,10 @@ YARN as package manager.
 
 When you run yarn first and start the project you should see some headers but **without** styles,
 they should look identical.
+
+**For WESBOS TYPESCRIPT READ** 
+https://github.com/wesbos/eslint-config-wesbos/issues/68
+It's still in beta but it's quite good.
 
 **THIS NEEDS NODE 12.13.0**
 
