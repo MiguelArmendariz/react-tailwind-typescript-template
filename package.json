@@ -29,6 +29,8 @@
     "react-dom": "^17.0.1"
   },
   "devDependencies": {
+    "@types/react": "^17.0.3",
+    "@types/react-dom": "^17.0.3",
     "autoprefixer": "^10.2.5",
     "awesome-typescript-loader": "^5.2.1",
     "css-loader": "^5.1.2",

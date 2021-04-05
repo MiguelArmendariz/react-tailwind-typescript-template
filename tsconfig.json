@@ -8,15 +8,19 @@
     "types":[
       "react"
     ],
-    "module": "es2017",
+    "target": "ESNext",
     "typeRoots": [
       "node_modules/@types"
     ],
     "strict": true,
     "strictNullChecks": true,
-    "allowJs": true,
     "removeComments": true,
     "jsx": "react",
-    
-  }
+  },
+  "include": [
+    "./**/*"
+  ],
+  "exclude": [
+    "dist"
+  ]
 }
