@@ -16,17 +16,16 @@ YARN as package manager.
 When you run yarn first and start the project you should see some headers but **without** styles,
 they should look identical.
 
-**For WESBOS TYPESCRIPT READ** 
-https://github.com/wesbos/eslint-config-wesbos/issues/68
-It's still in beta but it's quite good.
+**Tailwind CSS** 
+Please update the **content** array with your files pattern. Check docs to update them properly.
+https://tailwindcss.com/docs/content-configuration
 
 **THIS NEEDS NODE 12.13.0**
 
 #### Recommendations
 
-I personally like to use **yarn-check** package because it offers a way to visualize which package to update and it highlights
-if the package update is a patch, minor update, potentially breaker, etc.
+To update packages based in package.json range you can use **yarn upgrade-interactive** which will allow you to select which packages to update.
 
-You can use the command **yarn-check -u** to see it this way and **select only** the packages you want to update.
+Otherwise if you want to update to latest, ignoring range, you can use **yarn upgrade-interactive --latest**.
 
 Feel free to contact me if you have suggestions/requests.

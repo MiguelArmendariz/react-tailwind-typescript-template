@@ -28,8 +28,7 @@ module.exports = (env) => {
       devServer: {
         host: '0.0.0.0',
         port: PORT,
-        disableHostCheck: true,
-        public: `localhost:${PORT}`,
+        allowedHosts: 'all',
       },
       module: {
         rules: [
