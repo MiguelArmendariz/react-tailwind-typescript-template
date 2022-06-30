@@ -5,4 +5,4 @@ import App from './App/App';
 const container = document.getElementById('root') as Element;
 const root = createRoot(container);
 
-root.render(<App />)
+root.render(<App />);
